@@ -87,7 +87,7 @@ function cargarInstrumento() {
 
 function verCarrito(){
     arrayCarrito.forEach((nuevaDrum) => {
-        alert(`Elegiste la Bateria ${nuevaDrum.nombre} color ${nuevaDrum.color} por un precio de ${nuevaDrum.precio} + iva`);
+        alert(`Elegiste la Bateria ${nuevaDrum.nombre} color ${nuevaDrum.color} por un precio de ${nuevaDrum.precio} + IVA`);
     }); 
 }
 
@@ -105,7 +105,9 @@ let detallesCompra = prompt(
 const iva = 1.21;
 saludo()
 
-while (detallesCompra !== "3") {
+
+
+while (detallesCompra !== "4") {
     if (detallesCompra === "1") {
         cargarInstrumento(arrayCarrito);
     }
@@ -115,7 +117,7 @@ while (detallesCompra !== "3") {
     if (detallesCompra === "3") {
         finalizarOperacion();
     }
-    detallesCompra = prompt("Ingresá nuavemente \ 1: Seguir comprando instrumentos \ 2: Ver Carrito\ 3: Finalizar operación")
+    detallesCompra = prompt("Ingresá nuavemente \ 1: Seguir comprando instrumentos \ 2: Ver Carrito\ 3: Finalizar operación \ 4: Salir")
 }
 
 alert("¡Gracias por visitar la Casa de Instrumentos musicales Creedence!")
