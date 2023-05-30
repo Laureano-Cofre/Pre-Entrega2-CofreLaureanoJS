@@ -87,7 +87,7 @@ function cargarInstrumento() {
 
 function verCarrito(){
     arrayCarrito.forEach((nuevaDrum) => {
-        alert(`Elegiste la Bateria ${nuevaDrum.nombre} color ${nuevaDrum.color} por un precio de ${nuevaDrum.precio}`);
+        alert(`Elegiste la Bateria ${nuevaDrum.nombre} color ${nuevaDrum.color} por un precio de ${nuevaDrum.precio} + iva`);
     }); 
 }
 
